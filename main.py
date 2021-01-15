@@ -31,7 +31,7 @@ import random
 #print("Sorted number list: ", numlst)
 #print("String list in alphabetical order: ", strlst)
 
-"""Task 4 and 5"""
+"""Task 4, 5 and 6"""
 
 
 def iseven(num):
@@ -41,18 +41,29 @@ def iseven(num):
         return
 
 
+def posdivbythree(num):
+    if num > 0 and num % 3 == 0:
+        return "posdivthree"
+    else:
+        return
+
+
 def askuser():
     print("Write a number, 0 will stop the loop.")
     negative = 0
     even = 0
+    posdivthree = 0
     while True:
         number = int(input())
         if iseven(number) == "even":
             even += 1
+        elif posdivbythree(number) == "posdivthree":
+            posdivthree += 1
 
         if number == 0:
             print("Amount of negative inputs: ", negative)
             print("Amount of even numbers: ", even)
+            print("Amount of positive integers divisible by 3: ", posdivthree)
             return
         elif number < 0:
             negative += 1
