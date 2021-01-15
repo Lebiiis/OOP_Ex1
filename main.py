@@ -31,16 +31,28 @@ import random
 #print("Sorted number list: ", numlst)
 #print("String list in alphabetical order: ", strlst)
 
-"""Task 4"""
+"""Task 4 and 5"""
+
+
+def iseven(num):
+    if num % 2 == 0:
+        return "even"
+    else:
+        return
 
 
 def askuser():
     print("Write a number, 0 will stop the loop.")
     negative = 0
+    even = 0
     while True:
         number = int(input())
+        if iseven(number) == "even":
+            even += 1
+
         if number == 0:
             print("Amount of negative inputs: ", negative)
+            print("Amount of even numbers: ", even)
             return
         elif number < 0:
             negative += 1
@@ -50,3 +62,4 @@ def askuser():
 
 
 askuser()
+
