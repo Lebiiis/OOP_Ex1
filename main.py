@@ -1,9 +1,9 @@
 import random
 
-"""Exercise 1"""
+"""Task 1"""
 print("hello")
 
-"""Exercise 2"""
+"""Task 2"""
 
 numlst = []
 for i in range(10):
@@ -22,3 +22,11 @@ for i in range(len(numlst)-1):
     numlst[i] = random.randint(0, 9999)
 
 print(numlst)
+
+"""Task 3"""
+
+numlst.sort()
+strlst.sort()
+
+print("Sorted number list: ", numlst)
+print("String list in alphabetical order: ", strlst)
