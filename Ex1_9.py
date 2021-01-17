@@ -16,7 +16,7 @@ def random_number_from_1_to_6():
     return num
 
 
-# Print the result
+# Print the results
 
 print(random_number_from_1_to_6())
 
