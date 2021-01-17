@@ -34,30 +34,30 @@ import random
 """Task 4, 5 and 6"""
 
 
-def iseven(num):
+def is_even(num):
     if num % 2 == 0:
         return "even"
     else:
         return
 
 
-def posdivbythree(num):
+def pos_div_by_three(num):
     if num > 0 and num % 3 == 0:
         return "posdivthree"
     else:
         return
 
 
-def askuser():
+def ask_user():
     print("Write a number, 0 will stop the loop.")
     negative = 0
     even = 0
     posdivthree = 0
     while True:
         number = int(input())
-        if iseven(number) == "even":
+        if is_even(number) == "even":
             even += 1
-        elif posdivbythree(number) == "posdivthree":
+        elif pos_div_by_three(number) == "posdivthree":
             posdivthree += 1
 
         if number == 0:
@@ -72,5 +72,5 @@ def askuser():
             print(number)
 
 
-askuser()
+ask_user()
 
