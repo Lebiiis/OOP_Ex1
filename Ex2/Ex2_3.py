@@ -1,3 +1,7 @@
+# File: Ex2_3
+# Author: Niki Leppänen
+# Description:  After writing the pseudocode, code task 2. Simple code is enough, no objects needed.
+
 num = int(input("Enter the amount of accepted exercises: "))
 
 if num == 9:
